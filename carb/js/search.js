@@ -396,7 +396,7 @@ function InstantSearchController($scope){
         var result = v1 + v2;
 
         if (isNaN(result)) {
-            return "undefined";
+            return "Enter temperature";
         } else {
             return result.toFixed(2);
         }
@@ -406,7 +406,7 @@ function InstantSearchController($scope){
     $scope.calcB = function (vols, temp) {
         result = $scope.calcPF(vols, temp) / 14.5037738;
         if (isNaN(result)) {
-            return "undefined";
+            return "Enter temperature";
         } else {
             return result.toFixed(2);
         }
